@@ -393,6 +393,10 @@ function kata18() {
 
 showResults(kata18())
 
+
+
+
+
 /**
  * Daqui em diante são os bônus, por sua conta e risco
  */
