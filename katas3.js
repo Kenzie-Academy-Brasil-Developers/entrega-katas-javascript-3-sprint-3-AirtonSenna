@@ -401,22 +401,121 @@ showResults(kata18())
  * Daqui em diante são os bônus, por sua conta e risco
  */
 
+
+
+
+   
+
+
+    
+
+
 function kataBonus1() {
-    // implemente o código do kata bonus 1 aqui
+
+    const boxHolder = document.getElementById('boxHolder');
+    const title = document.createElement('h2');
+    title.innerText = 'Kata Bonus 1';
+    boxHolder.appendChild(title)
+
+    for (let i = 0; i < 20; i++) { 
+        const box = document.createElement('div');
+        box.classList.add('box');
+        boxHolder.appendChild(box)
+    }
 }
+
+kataBonus1()
+
+
+
 
 function kataBonus2() {
-    // implemente o código do kata bonus 2 aqui
+
+    const boxHolder = document.getElementById('boxHolder');
+    const title = document.createElement('h2');
+    title.innerText = 'Kata Bonus 2';
+    boxHolder.appendChild(title)
+    let width = [105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200]
+
+    
+    for (let i = 0; i < 20; i++) { 
+        const box = document.createElement('div');
+        box.classList.add('box2');
+
+
+        box.style.width = `${width[i]}px`;
+        boxHolder.appendChild(box)
+        
+        
+        
+    }
+
 }
+
+kataBonus2()
+
+
 
 function kataBonus3() {
-    // implemente o código do kata bonus 3 aqui
+
+    const boxHolder = document.getElementById('boxHolder');
+    const title = document.createElement('h2');
+    title.innerText = 'Kata Bonus 3';
+    boxHolder.appendChild(title)
+
+    for (let i = 0; i < 20; i++) { 
+        const box = document.createElement('div');
+        box.classList.add('box3');
+        box.style.width = `${sampleArray[i]}px`;
+        boxHolder.appendChild(box)
+    }
 }
+
+kataBonus3()
+
+
 
 function kataBonus4() {
-    // implemente o código do kata bonus 4 aqui
+    
+    const boxHolder = document.getElementById('boxHolder');
+    const title = document.createElement('h2');
+    title.innerText = 'Kata Bonus 4';
+    boxHolder.appendChild(title)
+    
+    for (let i = 0; i < 20; i++) { 
+        const box = document.createElement('div');
+        box.classList.add('box4');
+        
+        box.style.width = `${sampleArray[i]}px`;
+    
+        if (i % 2 === 0) {
+            box.style.backgroundColor = 'gray';
+        }
+    
+        boxHolder.appendChild(box)
+    }
 }
 
+kataBonus4()
+
 function kataBonus5() {
-    // implemente o código do kata bonus 5 aqui
+    
+    const boxHolder = document.getElementById('boxHolder');
+    const title = document.createElement('h2');
+    title.innerText = 'Kata Bonus 5';
+    boxHolder.appendChild(title)
+    
+    for (let i = 0; i < 20; i++) { 
+        const box = document.createElement('div');
+        box.classList.add('box5');
+        box.style.width = `${sampleArray[i]}px`;
+
+        if (sampleArray[i] % 2 === 0) {
+            box.style.backgroundColor = 'red'
+        }
+
+        boxHolder.appendChild(box)
+    }
 }
+
+kataBonus5()
